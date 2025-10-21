@@ -45,7 +45,7 @@ public class Board {
 
     public void randomlyPlaceGold(int amount) {
         Random random = new Random();
-        for (int i = 0; i < amount; i++) {
+        for (int i = 0; i <= amount; i++) {
             int x = random.nextInt(size);
             int y = random.nextInt(size);
             placeToken(x, y, new Token("\uD83D\uDCB0"));
