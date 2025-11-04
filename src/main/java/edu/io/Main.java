@@ -1,5 +1,8 @@
 package edu.io;
 
+import edu.io.token.Label;
+import edu.io.token.Token;
+
 import java.util.Scanner;
 
 public class Main {
@@ -49,7 +52,7 @@ public class Main {
             player.move(dx, dy, board.size);
 
             Token square = board.square(player.getX(), player.getY());
-            if ("\uD83D\uDCB0".equals(square.label)) {
+            if (Label.GOLD_TOKEN_LABEL.equals(square.label)) {
                 player.collectGold();
                 board.removeGoldAt(player.getX(), player.getY());
                 System.out.println("\uD83D\uDCB0 Znalazłeś złoto!");
