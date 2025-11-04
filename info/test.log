@@ -1,0 +1,913 @@
+2025.11.05 00:05:34
+
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :compileTestJava FAILED
+
+[Incubating] Problems report is available at: file:///home/olek/Projekty/zajecia/io/gold_rush_test_students/build/reports/problems/problems-report.html
+3 actionable tasks: 3 executed/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.EmptyToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PlayerToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:11: error: cannot find symbol
+    PlayerToken playerToken;
+    ^
+  symbol:   class PlayerToken
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:12: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:2: error: cannot find symbol
+import edu.io.Game;
+             ^
+  symbol:   class Game
+  location: package edu.io
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:3: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PlayerToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:13: error: cannot find symbol
+    Game game;
+    ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:14: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.NoTool;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Shed;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.PickaxeToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:10: error: cannot find symbol
+    private Shed shed;
+            ^
+  symbol:   class Shed
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:2: error: package edu.io.token does not exist
+import edu.io.token.EmptyToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PickaxeToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:2: error: package edu.io.token does not exist
+import edu.io.token.AnvilToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PickaxeToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:10: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.*;
+             ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/TokenTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/TokenTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.*;
+             ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.Gold;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTest.java:8: error: cannot find symbol
+    private Gold gold;
+            ^
+  symbol:   class Gold
+  location: class GoldTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTokenTest.java:1: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTokenTest.java:2: error: package edu.io.token does not exist
+import edu.io.token.PyriteToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PlayerToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:11: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class PlayerTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:17: error: cannot find symbol
+        player = new Player();
+                     ^
+  symbol:   class Player
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:18: error: cannot find symbol
+        playerToken = new PlayerToken(player, board);
+                          ^
+  symbol:   class PlayerToken
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:23: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:30: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.LEFT);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:32: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:38: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.RIGHT);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:40: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:41: error: cannot find symbol
+        Assertions.assertEquals(board.size()-1, pos.col());
+                                     ^
+  symbol:   method size()
+  location: variable board of type Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:46: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.UP);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:48: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:54: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.DOWN);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:56: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:57: error: cannot find symbol
+        Assertions.assertEquals(board.size()-1, pos.row());
+                                     ^
+  symbol:   method size()
+  location: variable board of type Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:62: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:64: error: package PlayerToken does not exist
+            playerToken.move(PlayerToken.Move.DOWN);
+                                        ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:70: error: package PlayerToken does not exist
+            playerToken.move(PlayerToken.Move.UP);
+                                        ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:79: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:80: error: package PlayerToken does not exist
+        playerToken.move(PlayerToken.Move.RIGHT);
+                                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:82: error: cannot find symbol
+                EmptyToken.class,
+                ^
+  symbol:   class EmptyToken
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:18: error: cannot find symbol
+        game = new Game();
+                   ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:19: error: cannot find symbol
+        player = new Player();
+                     ^
+  symbol:   class Player
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:25: error: cannot find symbol
+        Assertions.assertInstanceOf(PlayerToken.class, player.token());
+                                    ^
+  symbol:   class PlayerToken
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:35: error: cannot find symbol
+            Field[] fields = Game.class.getDeclaredFields();
+                             ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:40: error: cannot find symbol
+                    PlayerToken token = player.token();
+                    ^
+  symbol:   class PlayerToken
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:56: error: cannot find symbol
+        Assertions.assertDoesNotThrow(() -> Game.class.getMethod("start"));
+                                            ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:14: error: cannot find symbol
+        this.shed = new Shed();
+                        ^
+  symbol:   class Shed
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:20: error: cannot find symbol
+        Assertions.assertInstanceOf(NoTool.class, shed.getTool());
+                                    ^
+  symbol:   class NoTool
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:25: error: cannot find symbol
+        var tool = new PickaxeToken();
+                       ^
+  symbol:   class PickaxeToken
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:39: error: cannot find symbol
+        shed.add(new PickaxeToken());
+                     ^
+  symbol:   class PickaxeToken
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:41: error: cannot find symbol
+        Assertions.assertInstanceOf(NoTool.class, shed.getTool());
+                                    ^
+  symbol:   class NoTool
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:12: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:13: error: cannot find symbol
+        player.interactWithToken(new PickaxeToken());
+                                     ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:14: error: cannot find symbol
+        player.interactWithToken(new GoldToken(2.0));
+                                     ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:21: error: cannot find symbol
+        Assertions.assertEquals(1.5, new PickaxeToken().gainFactor());
+                                         ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:26: error: cannot find symbol
+        Assertions.assertEquals(1.75, new PickaxeToken(1.75).gainFactor());
+                                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:29: error: cannot find symbol
+                () -> new PickaxeToken(0));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:32: error: cannot find symbol
+                () -> new PickaxeToken(-1));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:37: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:38: error: cannot find symbol
+        player.interactWithToken(new PickaxeToken(1.75));
+                                     ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:39: error: cannot find symbol
+        player.interactWithToken(new GoldToken(2.0));
+                                     ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:45: error: cannot find symbol
+        Assertions.assertEquals(3, new PickaxeToken().durability());
+                                       ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:50: error: cannot find symbol
+        Assertions.assertEquals(5, new PickaxeToken(1.0, 5).durability());
+                                       ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:53: error: cannot find symbol
+                () -> new PickaxeToken(1.0, 0));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:56: error: cannot find symbol
+                () -> new PickaxeToken(1.0, -1));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:62: error: cannot find symbol
+        var t = new PickaxeToken(1.5, n);
+                    ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:73: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:74: error: cannot find symbol
+        var goldToken = new GoldToken(2.0);
+                            ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:75: error: cannot find symbol
+        var pickaxeToken = new PickaxeToken(1.5, 1);
+                               ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:87: error: cannot find symbol
+        new PickaxeToken().useWith(new GoldToken())
+                                       ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:87: error: cannot find symbol
+        new PickaxeToken().useWith(new GoldToken())
+            ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:97: error: cannot find symbol
+        new PickaxeToken().useWith(new EmptyToken())
+                                       ^
+  symbol:   class EmptyToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:97: error: cannot find symbol
+        new PickaxeToken().useWith(new EmptyToken())
+            ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:107: error: cannot find symbol
+        var pickaxeToken = new PickaxeToken(1.5, 1);
+                               ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:108: error: cannot find symbol
+        pickaxeToken.useWith(new GoldToken()).ifWorking(()->{});
+                                 ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:109: error: cannot find symbol
+        pickaxeToken.useWith(new GoldToken())
+                                 ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:13: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:14: error: cannot find symbol
+        var pickaxeToken = new PickaxeToken(1.5, DUR);
+                               ^
+  symbol:   class PickaxeToken
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:17: error: cannot find symbol
+        pickaxeToken.useWith(new GoldToken()).ifWorking(() -> {});
+                                 ^
+  symbol:   class GoldToken
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:20: error: cannot find symbol
+        player.interactWithToken(new AnvilToken());
+                                     ^
+  symbol:   class AnvilToken
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:15: error: cannot find symbol
+        player = new Player();
+                     ^
+  symbol:   class Player
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:25: error: cannot find symbol
+        Token t = new PlayerToken(player, board);
+        ^
+  symbol:   class Token
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:25: error: cannot find symbol
+        Token t = new PlayerToken(player, board);
+                      ^
+  symbol:   class PlayerToken
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:27: error: cannot find symbol
+        Assertions.assertEquals(t, board.peekToken(1, 2));
+                                        ^
+  symbol:   method peekToken(int,int)
+  location: variable board of type Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:32: error: cannot find symbol
+        board.placeToken(1, 2, new GoldToken());
+                                   ^
+  symbol:   class GoldToken
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:33: error: cannot find symbol
+        board.placeToken(board.size()-1, board.size()-1,
+                              ^
+  symbol:   method size()
+  location: variable board of type Board
+100 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler output below.
+  /home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:2: error: package edu.io.player does not exist
+  import edu.io.player.Player;
+                      ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 874ms
+[STDERR]
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.EmptyToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PlayerToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:11: error: cannot find symbol
+    PlayerToken playerToken;
+    ^
+  symbol:   class PlayerToken
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:12: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:2: error: cannot find symbol
+import edu.io.Game;
+             ^
+  symbol:   class Game
+  location: package edu.io
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:3: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PlayerToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:13: error: cannot find symbol
+    Game game;
+    ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:14: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.NoTool;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Shed;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.PickaxeToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:10: error: cannot find symbol
+    private Shed shed;
+            ^
+  symbol:   class Shed
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:2: error: package edu.io.token does not exist
+import edu.io.token.EmptyToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PickaxeToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:2: error: package edu.io.token does not exist
+import edu.io.token.AnvilToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PickaxeToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:10: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.*;
+             ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/TokenTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/TokenTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.*;
+             ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTest.java:1: error: package edu.io.player does not exist
+import edu.io.player.Gold;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTest.java:8: error: cannot find symbol
+    private Gold gold;
+            ^
+  symbol:   class Gold
+  location: class GoldTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTokenTest.java:1: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GoldTokenTest.java:2: error: package edu.io.token does not exist
+import edu.io.token.PyriteToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:2: error: package edu.io.player does not exist
+import edu.io.player.Player;
+                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:3: error: package edu.io.token does not exist
+import edu.io.token.GoldToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:4: error: package edu.io.token does not exist
+import edu.io.token.PlayerToken;
+                   ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTest.java:11: error: cannot find symbol
+    Player player;
+    ^
+  symbol:   class Player
+  location: class PlayerTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:17: error: cannot find symbol
+        player = new Player();
+                     ^
+  symbol:   class Player
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:18: error: cannot find symbol
+        playerToken = new PlayerToken(player, board);
+                          ^
+  symbol:   class PlayerToken
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:23: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:30: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.LEFT);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:32: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:38: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.RIGHT);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:40: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:41: error: cannot find symbol
+        Assertions.assertEquals(board.size()-1, pos.col());
+                                     ^
+  symbol:   method size()
+  location: variable board of type Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:46: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.UP);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:48: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:54: error: package PlayerToken does not exist
+            while (true) playerToken.move(PlayerToken.Move.DOWN);
+                                                     ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:56: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:57: error: cannot find symbol
+        Assertions.assertEquals(board.size()-1, pos.row());
+                                     ^
+  symbol:   method size()
+  location: variable board of type Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:62: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:64: error: package PlayerToken does not exist
+            playerToken.move(PlayerToken.Move.DOWN);
+                                        ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:70: error: package PlayerToken does not exist
+            playerToken.move(PlayerToken.Move.UP);
+                                        ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:79: error: cannot find symbol
+        Board.Coords pos = playerToken.pos();
+             ^
+  symbol:   class Coords
+  location: class Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:80: error: package PlayerToken does not exist
+        playerToken.move(PlayerToken.Move.RIGHT);
+                                    ^
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:82: error: cannot find symbol
+                EmptyToken.class,
+                ^
+  symbol:   class EmptyToken
+  location: class PlayerTokenTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:18: error: cannot find symbol
+        game = new Game();
+                   ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:19: error: cannot find symbol
+        player = new Player();
+                     ^
+  symbol:   class Player
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:25: error: cannot find symbol
+        Assertions.assertInstanceOf(PlayerToken.class, player.token());
+                                    ^
+  symbol:   class PlayerToken
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:35: error: cannot find symbol
+            Field[] fields = Game.class.getDeclaredFields();
+                             ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:40: error: cannot find symbol
+                    PlayerToken token = player.token();
+                    ^
+  symbol:   class PlayerToken
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/GameTest.java:56: error: cannot find symbol
+        Assertions.assertDoesNotThrow(() -> Game.class.getMethod("start"));
+                                            ^
+  symbol:   class Game
+  location: class GameTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:14: error: cannot find symbol
+        this.shed = new Shed();
+                        ^
+  symbol:   class Shed
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:20: error: cannot find symbol
+        Assertions.assertInstanceOf(NoTool.class, shed.getTool());
+                                    ^
+  symbol:   class NoTool
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:25: error: cannot find symbol
+        var tool = new PickaxeToken();
+                       ^
+  symbol:   class PickaxeToken
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:39: error: cannot find symbol
+        shed.add(new PickaxeToken());
+                     ^
+  symbol:   class PickaxeToken
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/ShedTest.java:41: error: cannot find symbol
+        Assertions.assertInstanceOf(NoTool.class, shed.getTool());
+                                    ^
+  symbol:   class NoTool
+  location: class ShedTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:12: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:13: error: cannot find symbol
+        player.interactWithToken(new PickaxeToken());
+                                     ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:14: error: cannot find symbol
+        player.interactWithToken(new GoldToken(2.0));
+                                     ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:21: error: cannot find symbol
+        Assertions.assertEquals(1.5, new PickaxeToken().gainFactor());
+                                         ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:26: error: cannot find symbol
+        Assertions.assertEquals(1.75, new PickaxeToken(1.75).gainFactor());
+                                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:29: error: cannot find symbol
+                () -> new PickaxeToken(0));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:32: error: cannot find symbol
+                () -> new PickaxeToken(-1));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:37: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:38: error: cannot find symbol
+        player.interactWithToken(new PickaxeToken(1.75));
+                                     ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:39: error: cannot find symbol
+        player.interactWithToken(new GoldToken(2.0));
+                                     ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:45: error: cannot find symbol
+        Assertions.assertEquals(3, new PickaxeToken().durability());
+                                       ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:50: error: cannot find symbol
+        Assertions.assertEquals(5, new PickaxeToken(1.0, 5).durability());
+                                       ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:53: error: cannot find symbol
+                () -> new PickaxeToken(1.0, 0));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:56: error: cannot find symbol
+                () -> new PickaxeToken(1.0, -1));
+                          ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:62: error: cannot find symbol
+        var t = new PickaxeToken(1.5, n);
+                    ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:73: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:74: error: cannot find symbol
+        var goldToken = new GoldToken(2.0);
+                            ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:75: error: cannot find symbol
+        var pickaxeToken = new PickaxeToken(1.5, 1);
+                               ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:87: error: cannot find symbol
+        new PickaxeToken().useWith(new GoldToken())
+                                       ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:87: error: cannot find symbol
+        new PickaxeToken().useWith(new GoldToken())
+            ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:97: error: cannot find symbol
+        new PickaxeToken().useWith(new EmptyToken())
+                                       ^
+  symbol:   class EmptyToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:97: error: cannot find symbol
+        new PickaxeToken().useWith(new EmptyToken())
+            ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:107: error: cannot find symbol
+        var pickaxeToken = new PickaxeToken(1.5, 1);
+                               ^
+  symbol:   class PickaxeToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:108: error: cannot find symbol
+        pickaxeToken.useWith(new GoldToken()).ifWorking(()->{});
+                                 ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PickaxeTest.java:109: error: cannot find symbol
+        pickaxeToken.useWith(new GoldToken())
+                                 ^
+  symbol:   class GoldToken
+  location: class PickaxeTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:13: error: cannot find symbol
+        var player = new Player();
+                         ^
+  symbol:   class Player
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:14: error: cannot find symbol
+        var pickaxeToken = new PickaxeToken(1.5, DUR);
+                               ^
+  symbol:   class PickaxeToken
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:17: error: cannot find symbol
+        pickaxeToken.useWith(new GoldToken()).ifWorking(() -> {});
+                                 ^
+  symbol:   class GoldToken
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/AnvilTest.java:20: error: cannot find symbol
+        player.interactWithToken(new AnvilToken());
+                                     ^
+  symbol:   class AnvilToken
+  location: class AnvilTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:15: error: cannot find symbol
+        player = new Player();
+                     ^
+  symbol:   class Player
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:25: error: cannot find symbol
+        Token t = new PlayerToken(player, board);
+        ^
+  symbol:   class Token
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:25: error: cannot find symbol
+        Token t = new PlayerToken(player, board);
+                      ^
+  symbol:   class PlayerToken
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:27: error: cannot find symbol
+        Assertions.assertEquals(t, board.peekToken(1, 2));
+                                        ^
+  symbol:   method peekToken(int,int)
+  location: variable board of type Board
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:32: error: cannot find symbol
+        board.placeToken(1, 2, new GoldToken());
+                                   ^
+  symbol:   class GoldToken
+  location: class BoardTest
+/home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/BoardTest.java:33: error: cannot find symbol
+        board.placeToken(board.size()-1, board.size()-1,
+                              ^
+  symbol:   method size()
+  location: variable board of type Board
+100 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler output below.
+  /home/olek/Projekty/zajecia/io/gold_rush_test_students/src/test/java/PlayerTokenTest.java:2: error: package edu.io.player does not exist
+  import edu.io.player.Player;
+                      ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 874ms
