@@ -1,6 +1,7 @@
 package edu.io.token;
 
 import edu.io.Board;
+import edu.io.Player;
 
 public class PlayerToken extends Token{
     public enum Move{
@@ -14,14 +15,16 @@ public class PlayerToken extends Token{
 
 
     private final Board board;
+    private final Player player;
     private int col;
     private int row;
 
 
-    public PlayerToken(Board board){
+    public PlayerToken(Player player, Board board){
         super(Label.PLAYER_TOKEN_LABEL);
 
         this.board = board;
+        this.player = player;
 
         this.col = 0;
         this.row = 0;
@@ -58,13 +61,20 @@ public class PlayerToken extends Token{
         this.col = newRow;
         this.row = newCol;
 
-        System.out.println("col:"+col+"  row: "+row);
+        var token = board.peekToken(col, row); //SPRAWDZ
+        if(token instanceof GoldToken gold){
+            player.gainGold(gold.amount());
+        }
 
 
     }
 
     public Board.Coords pos() {
         return new Board.Coords(col, row);
+    }
+
+    public Board getBoard(){
+        return board;
     }
 
 

@@ -1,31 +1,61 @@
 package edu.io;
 
-public class Player {
-    private int x;
-    private int y;
-    private int goldCollected;
+import edu.io.token.GoldToken;
+import edu.io.token.PlayerToken;
+import edu.io.token.Token;
 
-    public Player(int startX, int startY) {
-        this.x = startX;
-        this.y = startY;
-        this.goldCollected = 0;
+public class Player {
+
+    private double goldAmount = 0;
+    private PlayerToken assignedToken;
+
+
+    public Player() {
+
+    }
+    public Board board;
+
+
+    public void assignToken(PlayerToken token){
+        if(token == null) throw new IllegalArgumentException("Token nie może być null");
+        // opcjonalnie sprawdzamy, czy token ma referencję do tego gracza
+        // (zazwyczaj token już został utworzony z `new PlayerToken(this, board)`)
+        this.assignedToken = token;
     }
 
-    public int getX() { return x; }
-    public int getY() { return y; }
-    public int getGoldCollected() { return goldCollected; }
 
-    public void move(int dx, int dy, int boardSize) {
-        int newX = x + dx;
-        int newY = y + dy;
+    public PlayerToken token(){
+        return assignedToken;
+    }
 
-        if (newX >= 0 && newX < boardSize && newY >= 0 && newY < boardSize) {
-            x = newX;
-            y = newY;
+    public double gold(){
+
+        return goldAmount;
+    }
+
+    public void gainGold(double amount){
+        if(amount<0){
+            throw new IllegalArgumentException("Ilosc zlota nie moze byc nagatywna");
+        }
+        goldAmount += amount;
+    }
+
+    public void loseGold(double amount){
+
+        if(goldAmount-amount<0||amount<0){
+            throw new IllegalArgumentException("Ilosc zlota nie moze byc nagatywna");
+        }
+        goldAmount -= amount;
+
+    }
+
+
+    public void interactWithToken(Token token) {
+        if(token instanceof GoldToken gold){
+            gainGold(gold.amount());
         }
     }
 
-    public void collectGold() {
-        goldCollected++;
-    }
+
+
 }

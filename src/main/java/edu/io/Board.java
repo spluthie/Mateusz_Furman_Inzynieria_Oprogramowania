@@ -76,4 +76,17 @@ public class Board {
 
     }
 
+    public Coords getAvailableSquare() {
+        for (int row = 0; row < size; row++) {
+            for (int col = 0; col < size; col++) {
+                if (grid[row][col] instanceof EmptyToken) {
+                    return new Coords(col, row);
+                }
+            }
+        }
+        throw new IllegalStateException("Plansza jest pelna, nie ma wolnych miejsc");
+    }
+
+
+
 }
