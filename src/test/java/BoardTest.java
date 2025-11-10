@@ -63,6 +63,7 @@ class BoardTest {
             Board.Coords c = board.getAvailableSquare();
             board.placeToken(c.col(), c.row(), token);
         }
+
         Assertions.assertThrows(
                 IllegalStateException.class,
                 () -> board.getAvailableSquare());

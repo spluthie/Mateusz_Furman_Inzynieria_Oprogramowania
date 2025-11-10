@@ -2,8 +2,10 @@ package edu.io;
 
 import edu.io.token.EmptyToken;
 import edu.io.token.GoldToken;
+import edu.io.token.PyriteToken;
 import edu.io.token.Token;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class Board {
@@ -25,40 +27,50 @@ public class Board {
         }
 
     public void placeToken(int col, int row, Token token){
-        grid[row][col] = token;
+        grid[col][row] = token;
     }
 
 
     public Token square(int col, int row){
-        return grid[row][col];
+        return grid[col][row];
     }
 
     public void display(){
-        for (int row = 0; row < size; row++) {
-            for (int col = 0; col < size; col++) {
+        for (int col = 0; col < size; col++) {
+            for (int row = 0; row < size; row++) {
                 Token token = grid[col][row];
                 if (token != null) {
-                    System.out.print(token.label + " ");
+                    System.out.printf("%-3s" ,token.label + " ");
                 } else {
-                    System.out.print("\u30FB");
+                    System.out.printf("%-3s" ,"\u30FB");
                 }
             }
             System.out.println();
         }
     }
 
-    public void randomlyPlaceGold(int amount) {
+    public void randomlyPlaceToken(int amount, String token) {
         Random random = new Random();
-        for (int i = 0; i <= amount; i++) {
-            int x = random.nextInt(size);
-            int y = random.nextInt(size);
-            placeToken(x, y, new GoldToken());
+
+        for (int i = 0; i < amount; i++) {
+            // znajdź wolne pole
+            int x, y;
+            do {
+                x = random.nextInt(size);
+                y = random.nextInt(size);
+            } while (!(peekToken(x, y) instanceof EmptyToken));
+
+            // wstaw token
+            if ("gold".equals(token)) {
+                placeToken(x, y, new GoldToken());
+            } else if ("piryt".equals(token)) {
+                placeToken(x, y, new PyriteToken());
+            }
         }
     }
 
-    public void removeGoldAt(int x, int y) {
-        placeToken(x, y, new EmptyToken());
-    }
+
+
 
 
     public int size(){
@@ -68,7 +80,7 @@ public class Board {
 
     public Token peekToken(int col, int row) {
 
-        return grid[row][col];
+        return grid[col][row];
     }
 
 
@@ -77,9 +89,9 @@ public class Board {
     }
 
     public Coords getAvailableSquare() {
-        for (int row = 0; row < size; row++) {
-            for (int col = 0; col < size; col++) {
-                if (grid[row][col] instanceof EmptyToken) {
+        for (int col = 0; col < size; col++) {
+            for (int row = 0; row < size; row++) {
+                if (grid[col][row] instanceof EmptyToken) {
                     return new Coords(col, row);
                 }
             }

@@ -2,10 +2,15 @@ package edu.io;
 
 import edu.io.token.PlayerToken;
 
+import java.util.Scanner;
+
+import static edu.io.token.PlayerToken.Move.*;
+
 public class Game {
 
-    Board board;
+    public Board board;
     Player player;
+    PlayerToken token;
 
     public Game() {
         board = new Board();
@@ -32,7 +37,36 @@ public class Game {
 
 
     public void start() {
-        board.clean();
-        board.randomlyPlaceGold(10);
+        board.randomlyPlaceToken(7, "gold");
+        board.randomlyPlaceToken(3, "piryt");
+
+        Scanner scanner = new Scanner(System.in);
+        String kierunek;
+        while(true){
+            board.display();
+            kierunek = scanner.nextLine();
+            switch (kierunek){
+                case "":
+                    token().move(NONE);
+                    break;
+                case "w":
+                    token().move(UP);
+                    break;
+                case "a":
+                    token().move(LEFT);
+                    break;
+                case "s":
+                    token().move(DOWN);
+                    break;
+                case "d":
+                    token().move(RIGHT);
+                    break;
+                default:
+                    System.out.println("Bledny znak");
+                    break;
+            }
+        }
+
+
     }
 }

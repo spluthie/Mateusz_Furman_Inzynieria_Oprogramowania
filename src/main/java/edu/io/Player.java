@@ -13,13 +13,12 @@ public class Player {
     public Player() {
 
     }
-    public Board board;
+    
 
 
     public void assignToken(PlayerToken token){
         if(token == null) throw new IllegalArgumentException("Token nie może być null");
-        // opcjonalnie sprawdzamy, czy token ma referencję do tego gracza
-        // (zazwyczaj token już został utworzony z `new PlayerToken(this, board)`)
+
         this.assignedToken = token;
     }
 

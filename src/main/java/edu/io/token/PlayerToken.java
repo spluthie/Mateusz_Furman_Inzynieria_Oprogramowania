@@ -3,6 +3,7 @@ package edu.io.token;
 import edu.io.Board;
 import edu.io.Player;
 
+
 public class PlayerToken extends Token{
     public enum Move{
         NONE,
@@ -29,6 +30,7 @@ public class PlayerToken extends Token{
         this.col = 0;
         this.row = 0;
         board.placeToken(col, row, this);
+
     }
 
     public void move(Move dir){
@@ -53,13 +55,13 @@ public class PlayerToken extends Token{
         }
 
 
-        board.placeToken(row, col, new EmptyToken());
+        board.placeToken(col, row, new EmptyToken());
 
 
-        board.placeToken(newRow, newCol, this);
+        board.placeToken(newCol, newRow, this);
 
-        this.col = newRow;
-        this.row = newCol;
+        this.row = newRow;
+        this.col = newCol;
 
         var token = board.peekToken(col, row); //SPRAWDZ
         if(token instanceof GoldToken gold){
