@@ -1,5 +1,5 @@
 import edu.io.Board;
-import edu.io.Player;
+import edu.io.player.Player;
 import edu.io.token.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -63,7 +63,6 @@ class BoardTest {
             Board.Coords c = board.getAvailableSquare();
             board.placeToken(c.col(), c.row(), token);
         }
-
         Assertions.assertThrows(
                 IllegalStateException.class,
                 () -> board.getAvailableSquare());

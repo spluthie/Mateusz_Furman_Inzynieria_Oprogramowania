@@ -1,5 +1,7 @@
 package edu.io;
 
+import edu.io.player.Player;
+import edu.io.token.PickaxeToken;
 import edu.io.token.PlayerToken;
 
 import java.util.Scanner;
@@ -10,7 +12,7 @@ public class Game {
 
     public Board board;
     Player player;
-    PlayerToken token;
+
 
     public Game() {
         board = new Board();
@@ -39,9 +41,13 @@ public class Game {
     public void start() {
         board.randomlyPlaceToken(7, "gold");
         board.randomlyPlaceToken(3, "piryt");
+        PickaxeToken tokenisko = new PickaxeToken();
+        board.placeToken(5, 5, tokenisko);
+
 
         Scanner scanner = new Scanner(System.in);
         String kierunek;
+
         while(true){
             board.display();
             kierunek = scanner.nextLine();
@@ -65,8 +71,9 @@ public class Game {
                     System.out.println("Bledny znak");
                     break;
             }
+
         }
 
-
     }
+
 }

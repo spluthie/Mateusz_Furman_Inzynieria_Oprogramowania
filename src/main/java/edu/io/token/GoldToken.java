@@ -5,10 +5,12 @@ public class GoldToken extends Token {
 
     public double amount;
 
+
     public GoldToken(){
         super(Label.GOLD_TOKEN_LABEL);
         amount = 1;
     }
+
 
     public GoldToken(double amount){
         super(Label.GOLD_TOKEN_LABEL);
@@ -20,8 +22,7 @@ public class GoldToken extends Token {
 
     }
 
-
-
+    
     public double amount(){
         return amount;
     }

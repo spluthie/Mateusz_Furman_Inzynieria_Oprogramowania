@@ -1,9 +1,7 @@
 package edu.io;
 
-import edu.io.token.Label;
-import edu.io.token.Token;
 
-import java.util.Scanner;
+import edu.io.player.Player;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +10,6 @@ public class Main {
         Player player = new Player();
         game.join(player);
         game.start();
-
 
     }
 }

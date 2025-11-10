@@ -13,10 +13,12 @@ public class Board {
     public int size = 8;
     public Token[][] grid;
 
+
         public Board() {
             this.grid = new Token[size][size];
             clean();
         }
+
 
         public void clean(){
             for(int i = 0; i < size; i++){
@@ -26,18 +28,15 @@ public class Board {
             }
         }
 
+
     public void placeToken(int col, int row, Token token){
         grid[col][row] = token;
     }
 
 
-    public Token square(int col, int row){
-        return grid[col][row];
-    }
-
     public void display(){
-        for (int col = 0; col < size; col++) {
-            for (int row = 0; row < size; row++) {
+        for (int row = 0; row < size; row++) {
+            for (int col = 0; col < size; col++) {
                 Token token = grid[col][row];
                 if (token != null) {
                     System.out.printf("%-3s" ,token.label + " ");
@@ -53,14 +52,14 @@ public class Board {
         Random random = new Random();
 
         for (int i = 0; i < amount; i++) {
-            // znajdź wolne pole
+
             int x, y;
             do {
                 x = random.nextInt(size);
                 y = random.nextInt(size);
             } while (!(peekToken(x, y) instanceof EmptyToken));
 
-            // wstaw token
+
             if ("gold".equals(token)) {
                 placeToken(x, y, new GoldToken());
             } else if ("piryt".equals(token)) {
@@ -74,9 +73,9 @@ public class Board {
 
 
     public int size(){
-
         return size;
-    };
+    }
+
 
     public Token peekToken(int col, int row) {
 
@@ -87,6 +86,7 @@ public class Board {
     public record Coords(int col, int row){
 
     }
+
 
     public Coords getAvailableSquare() {
         for (int col = 0; col < size; col++) {
