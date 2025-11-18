@@ -30,7 +30,10 @@ public class Board {
 
 
     public void placeToken(int col, int row, Token token){
-        grid[col][row] = token;
+            if(token==null){
+                throw new NullPointerException("Obiekt nie moze byc null");
+            }
+            grid[col][row] = token;
     }
 
 
@@ -48,7 +51,12 @@ public class Board {
         }
     }
 
-    public void randomlyPlaceToken(int amount, String token) {
+    public void randomlyPlaceToken(int amount, Token token) {
+
+        if(token==null){
+            throw new NullPointerException("Obiekt nie moze byc null");
+        }
+
         Random random = new Random();
 
         for (int i = 0; i < amount; i++) {
@@ -60,11 +68,9 @@ public class Board {
             } while (!(peekToken(x, y) instanceof EmptyToken));
 
 
-            if ("gold".equals(token)) {
-                placeToken(x, y, new GoldToken());
-            } else if ("piryt".equals(token)) {
-                placeToken(x, y, new PyriteToken());
-            }
+            placeToken(x, y, token);
+
+
         }
     }
 

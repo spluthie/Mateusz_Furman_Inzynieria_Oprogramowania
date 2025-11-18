@@ -8,5 +8,6 @@ public class Label {
     public static final String PYRITE_TOKEN_LABEL = "\uD83D\uDCB0";
     public static final String PICKAXE_TOKEN_LABEL = "\u26CF";
     public static final String ANVIL_TOKEN_LABEL = "\u03C0";
+    public static final String WATER_TOKEN_LABEL = "\uD83D\uDCA7";
 
 }

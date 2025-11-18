@@ -23,6 +23,10 @@ public class PlayerToken extends Token{
     public PlayerToken(Player player, Board board){
         super(Label.PLAYER_TOKEN_LABEL);
 
+        if(player==null){
+            throw new NullPointerException("obiekt nie moze byc null");
+        }
+
         this.board = board;
         this.player = player;
 

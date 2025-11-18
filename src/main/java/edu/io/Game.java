@@ -1,8 +1,7 @@
 package edu.io;
 
 import edu.io.player.Player;
-import edu.io.token.PickaxeToken;
-import edu.io.token.PlayerToken;
+import edu.io.token.*;
 
 import java.util.Scanner;
 
@@ -14,14 +13,18 @@ public class Game {
     Player player;
 
 
+
+
     public Game() {
         board = new Board();
         player = new Player();
     }
 
 
+
+
     public void join(Player player) {
-        if (player == null) throw new IllegalArgumentException("player nie może być null");
+        if (player == null) throw new NullPointerException("player nie może być null");
         Board.Coords coords = board.getAvailableSquare();
 
         PlayerToken token = new PlayerToken(player, board);
@@ -39,37 +42,44 @@ public class Game {
 
 
     public void start() {
-        board.randomlyPlaceToken(7, "gold");
-        board.randomlyPlaceToken(3, "piryt");
-        PickaxeToken tokenisko = new PickaxeToken();
-        board.placeToken(5, 5, tokenisko);
+        board.randomlyPlaceToken(7, new GoldToken());
+        board.randomlyPlaceToken(3, new PyriteToken());
+        board.randomlyPlaceToken(1, new PickaxeToken());
+        board.randomlyPlaceToken(1, new AnvilToken());
 
 
         Scanner scanner = new Scanner(System.in);
         String kierunek;
 
         while(true){
-            board.display();
-            kierunek = scanner.nextLine();
-            switch (kierunek){
-                case "":
-                    token().move(NONE);
-                    break;
-                case "w":
-                    token().move(UP);
-                    break;
-                case "a":
-                    token().move(LEFT);
-                    break;
-                case "s":
-                    token().move(DOWN);
-                    break;
-                case "d":
-                    token().move(RIGHT);
-                    break;
-                default:
-                    System.out.println("Bledny znak");
-                    break;
+
+            try {
+                board.display();
+                System.out.println("Nawodnienie: " + player.vitals.hydration() + "/100");
+                kierunek = scanner.nextLine();
+                switch (kierunek) {
+                    case "":
+                        token().move(NONE);
+                        break;
+                    case "w":
+                        token().move(UP);
+                        break;
+                    case "a":
+                        token().move(LEFT);
+                        break;
+                    case "s":
+                        token().move(DOWN);
+                        break;
+                    case "d":
+                        token().move(RIGHT);
+                        break;
+                    default:
+                        System.out.println("Bledny znak");
+                        break;
+                }
+            }catch(IllegalStateException e){
+                System.out.println("Umarles, nie mozesz sie wiecej ruszac");
+                break;
             }
 
         }
